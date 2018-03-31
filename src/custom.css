@@ -1,0 +1,435 @@
+/*bs table*/
+.bs-table-overflow {
+  /*overflow: visible !important;*/
+  overflow-x: inherit !important;
+}
+
+.bs-table-edit-col {
+  min-width: 140px;
+}
+
+.bs-table-lp-col {
+  min-width: 50px;
+}
+
+.bs-table-dropdown-col {
+  overflow: inherit !important;
+}
+
+/** fixed bug with dropdown menu*/
+.bs-table-dropdown-col .dropdown-menu {
+  left: unset !important;
+}
+
+.bs-table-white-space-col {
+  white-space: normal !important;
+}
+
+.react-bs-container-body {
+  overflow: inherit !important;
+}
+
+.clipboard-field {
+  background-color: transparent !important;
+}
+
+
+/*calendar table styles*/
+
+.horizontal-scroll-except-first-column {
+  width: calc(100vw - 310px);
+  overflow-x: scroll;
+  margin-left: 200px;
+}
+
+@media (min-width: 992px) {
+  .horizontal-scroll-except-first-column {
+    width: calc(100vw - 200px - 310px);
+    overflow-x: scroll;
+    margin-left: 200px;
+  }
+}
+
+div.horizontal-scroll-except-first-column::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+div.horizontal-scroll-except-first-column::-webkit-scrollbar
+{
+  width: 16px;
+  background-color: #F5F5F5;
+}
+
+div.horizontal-scroll-except-first-column::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #21a8d8;
+}
+
+.horizontal-scroll-except-first-column > table > * > tr > th:first-child,
+.horizontal-scroll-except-first-column > table > * > tr > td:first-child {
+  position: absolute;
+  width: 200px;
+  /*margin-left: -200px;*/
+  left: 21px;
+}
+
+.horizontal-scroll-except-first-column > table > * > tr > th,
+.horizontal-scroll-except-first-column > table > * > tr > td {
+  /* Without this, if a cell wraps onto two lines, the first column
+   * will look bad, and may need padding. */
+  white-space: nowrap;
+}
+
+.calendar-table-container {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.calendar-table {
+}
+
+.calendar-table thead th {
+  background: #21a8d8 !important;
+  color: white
+}
+.calendar-table tr th:first-child {
+  background: #21a8d8;
+  color: white
+}
+.calendar-table tr td:first-child {
+  background: #21a8d8;
+  color: white
+}
+.calendar-table tbody tr:hover td {
+  background: #40b666 !important;
+}
+
+.calendar-table td, th {
+  min-width: 100px;
+  padding: 5px 5px 5px 5px;
+}
+
+/* end calendar table*/
+
+.main {
+  height: calc(100vh - 110px) !important;
+}
+
+.uib-daypicker > table td, th {
+  min-width: 10px !important;
+}
+
+.uib-button-bar * > button {
+  margin: 0px 5px 5px 0px;
+}
+
+.modal-backdrop.fade {
+  opacity: 0.2;
+}
+
+.av-block-ui-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0 !important;
+  filter: alpha(opacity=50);
+  background-color: white;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #21a8d8;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.month-select:first-child .btn {
+  height: 54px;
+  width: 100px;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+.border-top-1 {
+  border-top: 1px solid #cfd8dc;
+}
+
+.s-alert-box {
+  z-index: 1021 !important;
+}
+
+.register-right-box {
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  .register-right-box {
+    width: 100%;
+  }
+}
+
+.login-right-box {
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  .login-right-box {
+    width: 100%;
+  }
+}
+
+
+.react-datepicker-popper {
+  z-index: 100 !important;
+}
+
+.Select-menu-outer {
+  z-index: 1000 !important;
+}
+
+.acceptance-label {
+  font-size: 12px;
+}
+
+.survey-form section {
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.survey-form section:nth-child(even) {
+  background-color: #eef1f4;
+  border-radius: 5px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 20px;
+}
+
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.block-label {
+  display: block;
+}
+@media (max-width: 575px) {
+  .block-label {
+    display: none;
+  }
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .brand-fixer {
+    background-position: left center !important;
+    width: 155px !important;
+  }
+}
+
+.header-dropdown {
+  width: 70px !important;
+}
+
+.collapse-header {
+  padding: 10px 0px 10px 0px;
+}
+
+.collapse-icon {
+  color: #808080 !important;
+}
+
+.collapse-icon:hover:visited {
+  color: #808080;
+}
+
+.form-group select {
+  border-radius: 0 !important;
+}
+
+.Select-control {
+  border: 1px solid #c2cfd6 !important;
+  border-radius: 0 !important;
+}
+
+.Select-placeholder {
+  color: #3e515b !important;
+}
+
+.Select--multi .Select-value {
+  color: #ffffff !important;
+  font-weight: bolder;
+  border-radius: 0px !important;
+  background-color: #2ca9d6 !important;
+}
+
+.Select--multi .Select-value-icon {
+  font-weight: bold;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.margin-top-20 {
+  margin-top: 20px !important;
+}
+
+.agreement-container {
+  height: 400px;
+  overflow: scroll;
+}
+
+.has-danger .Select-control {
+  border-color: #f76060 !important;
+}
+
+.block-ui-container {
+  z-index: 4000 !important;
+}
+
+.block-ui-overlay {
+  background-color: transparent !important;
+}
+
+.td-agreement-from-internet {
+  background-color: #ffecbf !important;
+}
+
+.agreement-legend-from-internet {
+  background-color: #ffecbf !important;
+  color: #ffecbf !important;
+}
+
+.react-datepicker__portal .react-datepicker-time__header {
+  font-size: 14px !important;
+}
+
+.collapse-switch a {
+  color: #868e96 !important;
+}
+
+.collapse-switch a:hover:visited:active {
+  color: #868e96;
+}
+
+.collapse-toggle a {
+  color: #868e96 !important;
+}
+
+.collapse-toggle a:hover:visited:active {
+  color: #868e96;
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+.date-picker-field {
+  width: 200px !important;
+}
+
+.react-datepicker__time-container
+.react-datepicker__time
+.react-datepicker__time-box
+ul.react-datepicker__time-list
+li.react-datepicker__time-list-item {
+  min-width: 55px;
+}
+
+.drop-zone-container {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border: 2px dashed #c2cfd6;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-zone-container-active {
+  border: 2px dashed #30a64a;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.s-alert-box {
+  z-index: 4000 !important;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.show-sm-down {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .show-sm-down {
+    display: initial;
+  }
+  .app-header.navbar .navbar-brand {
+    margin-left: -30px !important;
+  }
+}
